@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Modern Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #007bff, #00c6ff);
+            color: white;
+            text-align: center;
+            padding: 25px;
+            position: sticky;
+            top: 0;
+        }
+
+        header h1 {
+            font-size: 40px;
+        }
+
+        /* Navigation */
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffe600;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.4),
+                    rgba(0, 0, 0, 0.4)),
+                url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 25px;
+            max-width: 700px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: #ff9800;
+            color: white;
+            text-decoration: none;
+            padding: 15px 35px;
+            border-radius: 50px;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff6600;
+            transform: scale(1.1);
+        }
+
+        /* Services */
+        .services {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 40px;
+            margin-bottom: 50px;
+            color: #007bff;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card {
+            width: 320px;
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+        }
+
+        .card h3 {
+            color: #007bff;
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+
+        .card p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer {
+            width: 100%;
+            min-height: 350px;
+            /* Footer অনেক বড় হবে */
+            background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .footer-content {
+            max-width: 900px;
+        }
+
+        .footer h2 {
+            font-size: 50px;
+            margin-bottom: 25px;
+            color: #38bdf8;
+        }
+
+        /* .footer p {
+            font-size: 22px;
+            line-height: 1.8;
+            margin: 15px 0;
+        }
+
+        .social-icons {
+            margin: 35px 0;
+        } */
+         .social-icons{
+    margin:35px 0;
+}
+
+.social-icons a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:55px;
+    height:55px;
+    margin:0 10px;
+    border:2px solid #38bdf8;
+    border-radius:50%;
+    color:#38bdf8;
+    font-size:24px;
+    text-decoration:none;
+    transition:0.4s;
+}
+
+.social-icons a:hover{
+    background:#38bdf8;
+    color:#fff;
+    transform:translateY(-8px);
+}
+
+        .social-icons a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            font-size: 22px;
+            margin: 10px 15px;
+            padding: 12px 25px;
+            border: 2px solid #38bdf8;
+            border-radius: 50px;
+            transition: 0.4s;
+        }
+
+        .social-icons a:hover {
+            background: hsl(200, 7%, 9%);
+            transform: translateY(-5px);
+        }
+
+        .footer hr {
+            width: 80%;
+            margin: 35px auto;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        @media (max-width:768px) {
+            .footer {
+                min-height: 450px;
+                padding: 60px 20px;
+            }
+
+            .footer h2 {
+                font-size: 35px;
+            }
+
+            .footer p {
+                font-size: 18px;
+            }
+
+            .social-icons a {
+                display: block;
+                margin: 15px auto;
+                width: 220px;
+            }
+        }
+
+        /* Responsive */
+        @media(max-width:768px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 20px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Modern Website</h1>
+
+        <nav>
+            <a href="http://127.0.0.1:5500/home.html">Home</a>
+            <a href="http://127.0.0.1:5500/about.html">About</a>
+            <a href="http://127.0.0.1:5500/services.html">Services</a>
+            <a href="http://127.0.0.1:5500/portfolio.html">Portfolio</a>
+            <a href="http://127.0.0.1:5500/contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Build my Dream Website</h1>
+        <p>
+            Create beautiful, modern and responsive websites using
+            HTML, CSS , JavaScript, MongoDB and React.
+        </p>
+
+        <a href="#" class="btn">Get Started</a>
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>Creative and modern website designs for your business.</p>
+            </div>
+
+            <div class="card">
+                <h3>Responsive Design</h3>
+                <p>Mobile, tablet and desktop friendly websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Fast, secure and professional websites with modern technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+        <h2>Let's Build Something Amazing</h2>
+        
+        <p>
+            Creating fast, secure, and professional websites
+            for businesses and individuals around the world.
+        </p>
+        <div class="social-icons">
+            <a href="https://web.whatsapp.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://github.com/"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+
+            <hr>
+
+            <p>© 2026 My Modern Website | All Rights Reserved</p>
+            <p>Designed by <strong>Shimran Hasan</strong></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

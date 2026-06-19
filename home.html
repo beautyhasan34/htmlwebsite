@@ -1,0 +1,120 @@
+<section id="home" class="home">
+    <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Beauty Hasan <h1>
+    <h2>I'm a <span>Full Stack Developer</span></h2>
+
+        <p>
+            I create modern, responsive, and user-friendly websites
+            using HTML, CSS,  JavaScript,  MongoDB  and React.
+        </p>
+
+<a href="https://wa.me/8801893938908" class="btn">Hire Me</a>
+    </div>
+
+    <div class="home-image">
+        <img src="beauty.png" alt="Profile Image">
+    </div>
+</section>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    .home {
+        min-height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 10%;
+        background: #0f172a;
+        color: #fff;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .home-content {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .home-content h3 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .home-content h1 {
+        font-size: 60px;
+        color: #38bdf8;
+        margin-bottom: 15px;
+    }
+
+    .home-content h2 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .home-content span {
+        color: #38bdf8;
+    }
+
+    .home-content p {
+        font-size: 18px;
+        line-height: 1.8;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 15px 35px;
+        background: #38bdf8;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 30px;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #0284c7;
+    }
+
+    .home-image {
+        flex: 1;
+        text-align: center;
+        min-width: 300px;
+    }
+
+    .home-image img {
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #38bdf8;
+        box-shadow: 0 0 30px rgba(56, 189, 248, 0.6);
+    }
+
+    @media (max-width:768px) {
+        .home {
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+
+        .home-content h1 {
+            font-size: 45px;
+        }
+
+        .home-content h2 {
+            font-size: 28px;
+        }
+
+        .home-image img {
+            width: 280px;
+            height: 280px;
+        }
+    }
+</style>
